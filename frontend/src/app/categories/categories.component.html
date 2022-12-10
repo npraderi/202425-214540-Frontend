@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div id="top3">Top 3 Categories in family history</div>
+<mat-card *ngIf="Top3Categories[0]" class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{Top3Categories[0].name}} - ${{Top3Categories[0].totalSpent}} </mat-card-title>
+      <mat-card-subtitle>{{Top3Categories[0].description}}</mat-card-subtitle>
+      <img mat-card-sm-image src="https://thumbs.dreamstime.com/b/premio-de-oro-la-medalla-del-primer-ganador-dise-o-n-mero-icono-cinta-el-mejor-trofeo-s-mbolo-r-campe-xito-uno-un-honor-153312549.jpg" >
+    </mat-card-title-group>
+  </mat-card>
+  <mat-card *ngIf="Top3Categories[1]" class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{Top3Categories[1].name}} - ${{Top3Categories[1].totalSpent}}</mat-card-title>
+      <mat-card-subtitle>{{Top3Categories[1].description}}</mat-card-subtitle>
+      <img mat-card-sm-image src="https://thumbs.dreamstime.com/b/premio-de-oro-la-medalla-del-primer-ganador-dise-o-n-mero-icono-cinta-el-mejor-trofeo-s-mbolo-r-campe-xito-uno-un-honor-153312549.jpg" >
+    </mat-card-title-group>
+  </mat-card>
+  <mat-card *ngIf="Top3Categories[2]" class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{Top3Categories[2].name}} - ${{Top3Categories[2].totalSpent}}</mat-card-title>
+      <mat-card-subtitle>{{Top3Categories[2].description}}</mat-card-subtitle>
+      <img mat-card-sm-image src="https://thumbs.dreamstime.com/b/premio-de-oro-la-medalla-del-primer-ganador-dise-o-n-mero-icono-cinta-el-mejor-trofeo-s-mbolo-r-campe-xito-uno-un-honor-153312549.jpg" >
+    </mat-card-title-group>
+  </mat-card>
+
+  

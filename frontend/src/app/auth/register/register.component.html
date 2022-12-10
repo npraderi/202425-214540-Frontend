@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="register">
+    <div class="register-triangle"></div>
+    
+    <h2 class="register-header">Register</h2>
+  
+    <form #frmRegister="ngForm" class="register-container" (ngSubmit)="onRegister(frmRegister)">
+      <p><input type="text" name="name" placeholder="Name" ngModel required></p>
+      <p><input type="email" name="email" placeholder="Email" ngModel required></p>
+      <p><input type="password" name="password" placeholder="Password" ngModel required></p>
+      <p><input type="text" name="familyName" placeholder="Family Name" ngModel required></p>
+      <p><input type="submit" value="Register"></p>
+    </form>    
+    <form #loginBtn="ngForm" class="register-container" (ngSubmit)="goLogin(loginBtn)">
+      <p><input type="submit" value="Back to Login"></p>
+    </form>
+  </div>
+</div>

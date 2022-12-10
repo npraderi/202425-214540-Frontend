@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<h2>Registrar nuevo gasto</h2>
+<form [formGroup]="formVar" (ngSubmit)="onSubmit()">
+<mat-form-field appearance="fill">
+    <mat-label>Amount</mat-label>
+    <div></div>
+    <input type="number" matInput formControlName="amount">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <div></div>
+    <input type="text" matInput formControlName="description">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Expense date</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="expenseDate"> 
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Category</mat-label>
+    <mat-select formControlName="categoryName">
+        <mat-option *ngFor ="let category of categories" [value]="category.name">{{category.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<button type='submit' mat-flat-button color="accent" class="accept">Submit</button>
+</form>

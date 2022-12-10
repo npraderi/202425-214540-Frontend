@@ -1,0 +1,50 @@
+<html>
+  <head> 
+  </head>
+  <body><div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a routerLink="/auth/dashboard" routerLinkActive="active">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Home
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a routerLink="/auth/expenses" routerLinkActive="active">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Expenses
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a routerLink="/auth/categories" routerLinkActive="active">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Categories
+                        </span>
+                    </a>
+                   
+                </li>  
+                <li>
+                    <a routerLink="/auth/settings" routerLinkActive="active">
+                        <i class="fa fa-user fa-2x"></i>
+                        <span class="nav-text">
+                            Profile
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                         <i class="fa fa-sign-out fa-2x"></i>
+                         <span class="nav-text">
+                             Logout
+                         </span>
+                     </a>
+                 </li>
+                <li>
+<router-outlet></router-outlet>            
